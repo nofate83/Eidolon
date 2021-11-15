@@ -874,7 +874,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Option A
+  m_Text: NewGame
 --- !u!222 &555249659
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1011,6 +1011,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 853617536}
+  - component: {fileID: 853617537}
   m_Layer: 0
   m_Name: Service
   m_TagString: Untagged
@@ -1032,6 +1033,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &853617537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853617535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042c3121ae916d948bb9bb20c82738b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &920788724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,11 +1741,13 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: NewGame
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: GameOver
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: LevelStart
+      m_Image: {fileID: 0}
+    - m_Text: LevelEnd
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1784,6 +1799,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1587137528}
+  - component: {fileID: 1587137529}
   m_Layer: 0
   m_Name: Client
   m_TagString: Untagged
@@ -1805,6 +1821,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1587137529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587137527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd516048c97c2a7438337e4b5620ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventType: {fileID: 555249658}
+  eventData: {fileID: 1622629521}
+  sendButton: {fileID: 808006810}
+  dropdownList: 0
 --- !u!1 &1615883558
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,7 +1942,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Event Type:'
+  m_Text: 'Event Data:'
 --- !u!222 &1619247723
 CanvasRenderer:
   m_ObjectHideFlags: 0

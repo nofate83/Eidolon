@@ -5,6 +5,12 @@ using System.Collections.Generic;
 [Serializable]
 public class EventsBuffer
 {
-    public List<SimpleEvent> events { get; set; }
+    //using events list as a class field instead a property its becouse JsonUtility not support property serialization
+    public List<SimpleEvent> events;
+
+    public EventsBuffer()
+    {
+        events = new List<SimpleEvent>();
+    }
 }
 

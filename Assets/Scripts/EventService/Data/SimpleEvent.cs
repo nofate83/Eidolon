@@ -3,7 +3,7 @@
 [Serializable]
 public class SimpleEvent
 {
-    public string type { get; set; }
-    public string data { get; set; }
+    public string type;
+    public string data;
 }
 
